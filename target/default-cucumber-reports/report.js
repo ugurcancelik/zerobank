@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountSummary.feature");
 formatter.feature({
-  "name": "Login",
+  "name": "Account Summary Menu",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "user enter wrong username or password",
+  "name": "Account summary page account types",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@login2"
+      "name": "@account_types"
     }
   ]
 });
@@ -28,31 +28,31 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user logs in as username \"ugur\" and as password \"celik\" as invalid credentials",
+  "name": "user logs in as username \"username\" and as password \"password\" as valid credentials",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginStepDefs.user_logs_in_as_username_and_as_password_as_invalid_credentials(String,String)"
+  "location": "LoginStepDefs.user_logs_in_as_username_and_as_password_as_valid_credentials(String,String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should not be able to login",
+  "name": "the user should see following menu options",
+  "rows": [
+    {
+      "cells": [
+        "Cash Accounts",
+        "Investment Accounts",
+        "Credit Accounts",
+        "Loan Accounts"
+      ]
+    }
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefs.user_should_not_be_able_to_login()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "users get error message",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginStepDefs.users_get_error_message()"
+  "location": "AccountSummaryStepDefs.the_user_should_see_following_menu_options(String\u003e)"
 });
 formatter.result({
   "status": "passed"

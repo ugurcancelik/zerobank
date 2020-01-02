@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-01T23:57:21.305Z",
+        "start_timestamp": "2020-01-02T01:05:53.259Z",
         "before": [
           {
             "result": {
-              "duration": 440741,
+              "duration": 503153,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "user enter wrong username or password",
+        "line": 10,
+        "name": "Account summary page account types",
         "description": "",
-        "id": "login;user-enter-wrong-username-or-password",
+        "id": "account-summary-menu;account-summary-page-account-types",
         "after": [
           {
             "result": {
-              "duration": 78054297,
+              "duration": 74804195,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1634055623,
+              "duration": 2354808330,
               "status": "passed"
             },
-            "line": 9,
+            "line": 11,
             "name": "user in the login page",
             "match": {
               "location": "LoginStepDefs.user_in_the_login_page()"
@@ -47,63 +47,61 @@
           },
           {
             "result": {
-              "duration": 401865081,
+              "duration": 1103696056,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user logs in as username \"ugur\" and as password \"celik\" as invalid credentials",
+            "line": 12,
+            "name": "user logs in as username \"username\" and as password \"password\" as valid credentials",
             "match": {
               "arguments": [
                 {
-                  "val": "\"ugur\"",
+                  "val": "\"username\"",
                   "offset": 25
                 },
                 {
-                  "val": "\"celik\"",
-                  "offset": 48
+                  "val": "\"password\"",
+                  "offset": 52
                 }
               ],
-              "location": "LoginStepDefs.user_logs_in_as_username_and_as_password_as_invalid_credentials(String,String)"
+              "location": "LoginStepDefs.user_logs_in_as_username_and_as_password_as_valid_credentials(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2010432532,
+              "duration": 57837460,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user should not be able to login",
+            "line": 13,
+            "name": "the user should see following menu options",
             "match": {
-              "location": "LoginStepDefs.user_should_not_be_able_to_login()"
+              "location": "AccountSummaryStepDefs.the_user_should_see_following_menu_options(String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Cash Accounts",
+                  "Investment Accounts",
+                  "Credit Accounts",
+                  "Loan Accounts"
+                ]
+              }
+            ],
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 26298181,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "users get error message",
-            "match": {
-              "location": "LoginStepDefs.users_get_error_message()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@login2"
+            "name": "@account_types"
           }
         ]
       }
     ],
-    "name": "Login",
+    "name": "Account Summary Menu",
     "description": "",
-    "id": "login",
+    "id": "account-summary-menu",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
+    "uri": "file:src/test/resources/features/AccountSummary.feature",
     "tags": []
   }
 ]
