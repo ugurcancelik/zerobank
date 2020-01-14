@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Payee.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountActivityNavigation.feature");
 formatter.feature({
-  "name": "Add new payee under pay bills",
+  "name": "Navigating to specific accounts in Accounts Activity",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Add a new payee",
+  "name": "Brokerage account redirect",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -18,67 +18,31 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click \"Pay Bills\" page",
+  "name": "the user clicks on \"Brokerage\" link on the Account Summary page",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginStepDefs.user_click_page(String)"
+  "location": "AccountActivityStepDefs.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "\"Add New Payee\" tab",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "PayBillsStepDefs.tab(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "creates new payee using following information",
-  "rows": [
-    {
-      "cells": [
-        "Payee Name",
-        "The Law Offices of Hyde, Price \u0026 Scharks"
-      ]
-    },
-    {
-      "cells": [
-        "Payee Address",
-        "100 Same st, Anytown, USA, 10001"
-      ]
-    },
-    {
-      "cells": [
-        "Account",
-        "Checking"
-      ]
-    },
-    {
-      "cells": [
-        "Payee details",
-        "XYZ account"
-      ]
-    }
-  ],
-  "keyword": "And "
-});
-formatter.match({
-  "location": "PayBillsStepDefs.creates_new_payee_using_following_information(String,String\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "message \"The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created.\" should be displayed",
+  "name": "user should be on \"Account Activity\" page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "PayBillsStepDefs.message_should_be_displayed(String)"
+  "location": "LoginStepDefs.user_should_be_on_page(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "first selected option should be \"Brokerage\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AccountActivityStepDefs.first_selected_option_should_be(String)"
 });
 formatter.result({
   "status": "passed"

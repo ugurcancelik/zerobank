@@ -20,7 +20,7 @@ public class AccountActivityStepDefs {
 
     @Then("first selected option should be {string}")
     public void first_selected_option_should_be(String string) {
-        String expected="Savings";
+        String expected=string;
         Assert.assertEquals(expected,new AccountActivityPage().selectedOptionTab());
         System.out.println(new AccountActivityPage().selectedOptionTab());
     }

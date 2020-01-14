@@ -1,6 +1,6 @@
 Feature: Add new payee under pay bills
 
-@wip
+
   Scenario: Add a new payee
     When user click "Pay Bills" page
     Given "Add New Payee" tab

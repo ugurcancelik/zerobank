@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7830731-0e4c-442f-b79a-33b1ed22a911" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountActivityPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/OnlineStatementsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/PayBillsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/AccountActivityStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/PayBillsStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/StatementsAndDocumentsStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AccountActivity.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AccountActivityNavigation.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/FindTransactions.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/PayBill.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Payee.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/PurchaseForeignCurrency.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/StatementsAndDocuments.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountSummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/AccountSummaryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/AccountSummaryStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/AccountSummaryStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/LoginStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zerobank/step_definitions/LoginStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountSummary.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AccountSummary.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountSummaryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/AccountSummaryPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/runners/CukesRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/step_definitions/AccountSummaryStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/step_definitions/AccountSummaryStepDefs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/step_definitions/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/step_definitions/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zerobank/step_definitions/LoginStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zerobank/step_definitions/LoginStepDefs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountSummary.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/AccountSummary.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,12 +88,25 @@
       <option name="presentableId" value="Default" />
       <updated>1577911434186</updated>
     </task>
+    <task id="LOCAL-00001" summary="projectfinish">
+      <created>1578962589270</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578962589270</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="projectfinish" />
+    <option name="LAST_COMMIT_MESSAGE" value="projectfinish" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="100" y="100" width="1480" height="850" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1578882445008">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state x="100" y="83" width="1480" height="919" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1578974644680">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="100" y="83" width="1480" height="919" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1680.1050/1680.-91.1920.1080@0.0.1680.1050" timestamp="1578974644680" />
     <state x="100" y="100" width="1480" height="850" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1578878690691" />
     <state x="100" y="100" width="1480" height="850" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1680.23.1920.1057/0.0.1680.996@0.0.1680.996" timestamp="1578878557536" />
     <state x="100" y="100" width="1480" height="850" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1578882445008" />
@@ -136,28 +115,36 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="604" y="390" width="471" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1578850651470" />
-    <state width="1638" height="237" key="GridCell.Tab.0.bottom" timestamp="1578962502636">
+    <state x="436" y="130" key="CommitChangelistDialog2" timestamp="1578962589112">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="365" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-91.1920.1080@0.0.1680.1050" timestamp="1578939962125" />
+    <state x="436" y="130" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1578962589112" />
+    <state width="1638" height="237" key="GridCell.Tab.0.bottom" timestamp="1578974645921">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="237" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-68.1920.1057@0.0.1680.1050" timestamp="1578974591447" />
+    <state width="1638" height="237" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-91.1920.1080@0.0.1680.1050" timestamp="1578974645921" />
     <state width="1638" height="237" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1578962502636" />
     <state width="1638" height="365" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1578882351056" />
-    <state width="1638" height="237" key="GridCell.Tab.0.center" timestamp="1578962502635">
+    <state width="1638" height="237" key="GridCell.Tab.0.center" timestamp="1578974645919">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="365" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-91.1920.1080@0.0.1680.1050" timestamp="1578939962123" />
+    <state width="1638" height="237" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-68.1920.1057@0.0.1680.1050" timestamp="1578974591445" />
+    <state width="1638" height="237" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-91.1920.1080@0.0.1680.1050" timestamp="1578974645919" />
     <state width="1638" height="237" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1578962502635" />
     <state width="1638" height="365" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1578882351054" />
-    <state width="1638" height="237" key="GridCell.Tab.0.left" timestamp="1578962502634">
+    <state width="1638" height="237" key="GridCell.Tab.0.left" timestamp="1578974645917">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="365" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-91.1920.1080@0.0.1680.1050" timestamp="1578939962123" />
+    <state width="1638" height="237" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-68.1920.1057@0.0.1680.1050" timestamp="1578974591444" />
+    <state width="1638" height="237" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-91.1920.1080@0.0.1680.1050" timestamp="1578974645917" />
     <state width="1638" height="237" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1578962502634" />
     <state width="1638" height="365" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1578882351053" />
-    <state width="1638" height="237" key="GridCell.Tab.0.right" timestamp="1578962502635">
+    <state width="1638" height="237" key="GridCell.Tab.0.right" timestamp="1578974645920">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="365" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-91.1920.1080@0.0.1680.1050" timestamp="1578939962124" />
+    <state width="1638" height="237" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-68.1920.1057@0.0.1680.1050" timestamp="1578974591446" />
+    <state width="1638" height="237" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-91.1920.1080@0.0.1680.1050" timestamp="1578974645920" />
     <state width="1638" height="237" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1578962502635" />
     <state width="1638" height="365" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1578882351055" />
     <state width="1638" height="363" key="GridCell.Tab.1.bottom" timestamp="1578947656372">
@@ -180,13 +167,18 @@
     </state>
     <state width="1638" height="363" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1578947656372" />
     <state width="1638" height="363" key="GridCell.Tab.1.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1578868182714" />
+    <state x="440" y="266" key="Vcs.Push.Dialog.v2" timestamp="1578962592990">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="266" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1578962592990" />
     <state x="578" y="286" width="531" height="482" key="extract.method.dialog" timestamp="1578947819235">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="578" y="286" width="531" height="482" key="extract.method.dialog/0.0.1680.1050@0.0.1680.1050" timestamp="1578947819235" />
-    <state x="495" y="289" width="689" height="472" key="find.popup" timestamp="1578962500752">
+    <state x="495" y="289" width="689" height="472" key="find.popup" timestamp="1578974588667">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="495" y="289" width="689" height="472" key="find.popup/0.0.1680.1050/1680.-68.1920.1057@0.0.1680.1050" timestamp="1578974588667" />
     <state x="495" y="289" width="689" height="472" key="find.popup/0.0.1680.1050/1680.-91.1920.1080@0.0.1680.1050" timestamp="1578938894141" />
     <state x="495" y="289" width="689" height="472" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1578962500752" />
     <state x="495" y="289" width="689" height="472" key="find.popup/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1578879364711" />
