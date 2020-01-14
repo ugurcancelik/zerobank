@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountActivityNavigation.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FindTransactions.feature");
 formatter.feature({
-  "name": "Navigating to specific accounts in Accounts Activity",
+  "name": "Find Transactions in Account Activity",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Brokerage account redirect",
+  "name": "Search date range",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -18,31 +18,101 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user clicks on \"Brokerage\" link on the Account Summary page",
+  "name": "user click \"Account Activity\" page",
   "keyword": "When "
 });
 formatter.match({
-  "location": "AccountActivityStepDefs.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
+  "location": "LoginStepDefs.user_click_page(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user should be on \"Account Activity\" page",
-  "keyword": "Then "
+  "name": "the user accesses the Find Transactions tab",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginStepDefs.user_should_be_on_page(String)"
+  "location": "AccountActivityStepDefs.the_user_accesses_the_Find_Transactions_tab()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "first selected option should be \"Brokerage\"",
+  "name": "the user enters date range from \"2012-09-01\" to \"2012-09-06\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AccountActivityStepDefs.the_user_enters_date_range_from_to(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks search",
   "keyword": "And "
 });
 formatter.match({
-  "location": "AccountActivityStepDefs.first_selected_option_should_be(String)"
+  "location": "AccountActivityStepDefs.clicks_search()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "results table should only show transactions dates between \"2012-09-01\" to \"2012-09-06\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AccountActivityStepDefs.results_table_should_only_show_transactions_dates_between_to(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the results should be sorted by most recent date",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AccountActivityStepDefs.the_results_should_be_sorted_by_most_recent_date()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user enters date range from \"2012-09-02\" to \"2012-09-06\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "AccountActivityStepDefs.the_user_enters_date_range_from_to(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks search",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AccountActivityStepDefs.clicks_search()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "results table should only show transactions dates between \"2012-09-02\" to \"2012-09-06\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AccountActivityStepDefs.results_table_should_only_show_transactions_dates_between_to(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the results table should only not contain transactions dated \"2012-09-01\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "AccountActivityStepDefs.the_results_table_should_only_not_contain_transactions_dated(String)"
 });
 formatter.result({
   "status": "passed"

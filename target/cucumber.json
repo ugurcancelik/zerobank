@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-14T04:04:06.351Z",
+        "start_timestamp": "2020-01-14T04:10:04.593Z",
         "before": [
           {
             "result": {
-              "duration": 4207246369,
+              "duration": 4038358495,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "Brokerage account redirect",
+        "line": 3,
+        "name": "Search date range",
         "description": "",
-        "id": "navigating-to-specific-accounts-in-accounts-activity;brokerage-account-redirect",
+        "id": "find-transactions-in-account-activity;search-date-range",
         "after": [
           {
             "result": {
-              "duration": 77877133,
+              "duration": 81990045,
               "status": "passed"
             },
             "match": {
@@ -35,55 +35,173 @@
         "steps": [
           {
             "result": {
-              "duration": 4327954923,
+              "duration": 290273459,
               "status": "passed"
             },
-            "line": 10,
-            "name": "the user clicks on \"Brokerage\" link on the Account Summary page",
+            "line": 4,
+            "name": "user click \"Account Activity\" page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Brokerage\"",
-                  "offset": 19
+                  "val": "\"Account Activity\"",
+                  "offset": 11
                 }
               ],
-              "location": "AccountActivityStepDefs.the_user_clicks_on_link_on_the_Account_Summary_page(String)"
+              "location": "LoginStepDefs.user_click_page(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3015395979,
+              "duration": 57498405,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user should be on \"Account Activity\" page",
+            "line": 5,
+            "name": "the user accesses the Find Transactions tab",
+            "match": {
+              "location": "AccountActivityStepDefs.the_user_accesses_the_Find_Transactions_tab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12430936757,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters date range from \"2012-09-01\" to \"2012-09-06\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Account Activity\"",
-                  "offset": 18
+                  "val": "\"2012-09-01\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"2012-09-06\"",
+                  "offset": 48
                 }
               ],
-              "location": "LoginStepDefs.user_should_be_on_page(String)"
+              "location": "AccountActivityStepDefs.the_user_enters_date_range_from_to(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4054857722,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks search",
+            "match": {
+              "location": "AccountActivityStepDefs.clicks_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105943415,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "results table should only show transactions dates between \"2012-09-01\" to \"2012-09-06\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2012-09-01\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"2012-09-06\"",
+                  "offset": 74
+                }
+              ],
+              "location": "AccountActivityStepDefs.results_table_should_only_show_transactions_dates_between_to(String,String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 152970988,
+              "duration": 376954,
               "status": "passed"
             },
-            "line": 12,
-            "name": "first selected option should be \"Brokerage\"",
+            "line": 9,
+            "name": "the results should be sorted by most recent date",
+            "match": {
+              "location": "AccountActivityStepDefs.the_results_should_be_sorted_by_most_recent_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18695528112,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user enters date range from \"2012-09-02\" to \"2012-09-06\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Brokerage\"",
+                  "val": "\"2012-09-02\"",
                   "offset": 32
+                },
+                {
+                  "val": "\"2012-09-06\"",
+                  "offset": 48
                 }
               ],
-              "location": "AccountActivityStepDefs.first_selected_option_should_be(String)"
+              "location": "AccountActivityStepDefs.the_user_enters_date_range_from_to(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4053710783,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicks search",
+            "match": {
+              "location": "AccountActivityStepDefs.clicks_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101912379,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "results table should only show transactions dates between \"2012-09-02\" to \"2012-09-06\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2012-09-02\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"2012-09-06\"",
+                  "offset": 74
+                }
+              ],
+              "location": "AccountActivityStepDefs.results_table_should_only_show_transactions_dates_between_to(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 457524,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the results table should only not contain transactions dated \"2012-09-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2012-09-01\"",
+                  "offset": 61
+                }
+              ],
+              "location": "AccountActivityStepDefs.the_results_table_should_only_not_contain_transactions_dated(String)"
             },
             "keyword": "And "
           }
@@ -95,11 +213,11 @@
         ]
       }
     ],
-    "name": "Navigating to specific accounts in Accounts Activity",
+    "name": "Find Transactions in Account Activity",
     "description": "",
-    "id": "navigating-to-specific-accounts-in-accounts-activity",
+    "id": "find-transactions-in-account-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AccountActivityNavigation.feature",
+    "uri": "file:src/test/resources/features/FindTransactions.feature",
     "tags": []
   }
 ]

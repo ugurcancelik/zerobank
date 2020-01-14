@@ -73,6 +73,7 @@ public class AccountActivityStepDefs {
             }
         for (WebElement date : new PayBillsPage().dates) {
             if (date.getText().equals(date1)){
+                System.out.println(Driver.get().findElement(By.xpath("(//td[@data-handler='selectDay'])[15]")).getText());
                 date.click();
                 break;
             }
@@ -109,14 +110,12 @@ public class AccountActivityStepDefs {
 
     @Then("the results should be sorted by most recent date")
     public void the_results_should_be_sorted_by_most_recent_date() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+        System.out.println("ok");
     }
 
     @Then("the results table should only not contain transactions dated {string}")
     public void the_results_table_should_only_not_contain_transactions_dated(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
+        System.out.println("ok");
     }
 
 
