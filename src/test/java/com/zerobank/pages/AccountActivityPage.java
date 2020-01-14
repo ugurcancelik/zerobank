@@ -72,7 +72,7 @@ public class AccountActivityPage extends BasePage {
     @FindBy(css=".ui-datepicker-title")
     public WebElement dateSelect;
 
-    @FindBy(xpath = "//tbody/tr/td[1]")
+    @FindBy(xpath = "//div[@id='filtered_transactions_for_account']//tbody/tr/td[1]")
     public List<WebElement> dateFindTrans;
 
 
