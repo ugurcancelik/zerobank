@@ -35,11 +35,7 @@ public class LoginPage extends BasePage {
         submit.click();
     }
 
-    public void verifyAccountSummary(){
-        String title=Driver.get().getTitle();
-        BrowserUtils.waitFor(2);
-        Assert.assertTrue(title.contains("Summary"));
-    }
+
 
     public void WrongAccount(){
         String title=Driver.get().getTitle();

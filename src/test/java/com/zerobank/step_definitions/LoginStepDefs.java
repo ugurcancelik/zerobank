@@ -1,5 +1,6 @@
 package com.zerobank.step_definitions;
 
+import com.zerobank.pages.DashBoardPage;
 import com.zerobank.pages.LoginPage;
 import com.zerobank.utilities.BrowserUtils;
 import com.zerobank.utilities.ConfigurationReader;
@@ -9,6 +10,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.sql.SQLOutput;
 
 public class LoginStepDefs {
 
@@ -25,9 +29,12 @@ public class LoginStepDefs {
     }
 
 
-    @Then("user should be on account summary page")
-    public void user_should_be_on_account_summary_page() {
-       loginPage.verifyAccountSummary();
+
+    @Then("user should be on {string} page")
+    public void user_should_be_on_page(String title) {
+        loginPage.verifyTitle(title);
+        System.out.println(Driver.get().getTitle());
+
     }
 
     @When("user logs in as username {string} and as password {string} as invalid credentials")
@@ -43,6 +50,21 @@ public class LoginStepDefs {
     @Then("users get error message")
     public void users_get_error_message() {
         loginPage.ErrorMessage();
+    }
+
+    @When("user click {string} page")
+    public void user_click_page(String moduleName) {
+
+        for (WebElement option:new DashBoardPage().modules) {
+
+            if(option.getText().equals(moduleName)){
+                option.click();
+
+            break;
+            }
+        }
+
+
     }
 
 

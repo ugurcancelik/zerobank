@@ -3,6 +3,7 @@ package com.zerobank.pages;
 
 import com.zerobank.utilities.BrowserUtils;
 import com.zerobank.utilities.Driver;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -34,6 +35,11 @@ public abstract class BasePage {
 
     @FindBy(linkText = "My User")
     public WebElement myUser;
+
+
+    //for zerobank top menus
+    @FindBy(xpath = "//ul[@class='nav nav-tabs']/li/a")
+    public List<WebElement> modules;
 
     public BasePage() {
         PageFactory.initElements(Driver.get(), this);
@@ -113,6 +119,12 @@ public abstract class BasePage {
 //            BrowserUtils.waitForStaleElement(Driver.get().findElement(By.xpath(moduleLocator)));
             BrowserUtils.clickWithTimeOut(Driver.get().findElement(By.xpath(moduleLocator)),  5);
         }
+    }
+
+    public void verifyTitle(String title){
+        String actualTitle=Driver.get().getTitle();
+        BrowserUtils.waitFor(3);
+        Assert.assertTrue(actualTitle.contains(title));
     }
 
 }

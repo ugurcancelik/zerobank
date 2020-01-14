@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",  //buradaki siralama onemli degil  // features = "src/test/resources/features/Login.feature",
         glue = "com/zerobank/step_definitions",
         dryRun = false,
-        tags = "@account_types"
+        tags = "@wip"
 )
 public class CukesRunner {
 }
