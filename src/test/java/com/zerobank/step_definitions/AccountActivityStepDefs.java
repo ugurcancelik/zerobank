@@ -66,31 +66,48 @@ public class AccountActivityStepDefs {
 
     @When("the user enters date range from {string} to {string}")
     public void the_user_enters_date_range_from_to(String date1, String date2) {
-            new AccountActivityPage().fromDate.click();
-
-            while (!new AccountActivityPage().dateSelect.getText().equals("September 2012")){
-                new AccountActivityPage().arrowLeft.click();
-            }
+        new AccountActivityPage().fromDate.click();
+        while (!new AccountActivityPage().dateSelect.getText().equals("September 2012")) {
+            new AccountActivityPage().arrowLeft.click();
+        }
         for (WebElement date : new PayBillsPage().dates) {
-            if (date.getText().equals(date1)){
-                System.out.println(Driver.get().findElement(By.xpath("(//td[@data-handler='selectDay'])[15]")).getText());
-                date.click();
-                break;
+            String dateTxt = date.getText();
+            if (date1.substring(8, 9).equals("0")) {
+                if (dateTxt.equals(date1.substring(date1.lastIndexOf("-") + 2))) {
+
+                    date.click();
+                    break;
+                }
+            } else {
+                if (dateTxt.equals(date1.substring(date1.lastIndexOf("-") + 1))) {
+
+                    date.click();
+                    break;
+                }
             }
         }
 
         new AccountActivityPage().toDate.click();
-        while (!new AccountActivityPage().dateSelect.getText().equals("September 2012")){
+        while (!new AccountActivityPage().dateSelect.getText().equals("September 2012")) {
             new AccountActivityPage().arrowLeft.click();
         }
         for (WebElement date : new PayBillsPage().dates) {
-            if (date.getText().equals(date2)){
-                date.click();
-                break;
+            String dateTxt = date.getText();
+            if (date2.substring(8, 9).equals("0")) {
+                if (dateTxt.equals(date2.substring(date2.lastIndexOf("-") + 2))) {
+                    date.click();
+                    break;
+                }
+            }else {
+                if (dateTxt.equals(date2.substring(date2.lastIndexOf("-") + 1))) {
+
+                    date.click();
+                    break;
+                }
             }
+
+
         }
-
-
     }
 
     @When("clicks search")
@@ -110,12 +127,12 @@ public class AccountActivityStepDefs {
 
     @Then("the results should be sorted by most recent date")
     public void the_results_should_be_sorted_by_most_recent_date() {
-        System.out.println("ok");
+
     }
 
     @Then("the results table should only not contain transactions dated {string}")
     public void the_results_table_should_only_not_contain_transactions_dated(String string) {
-        System.out.println("ok");
+
     }
 
 

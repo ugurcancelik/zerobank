@@ -38,7 +38,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enters date range from \"2012-09-01\" to \"2012-09-06\"",
+  "name": "the user enters date range from \"2012-09-21\" to \"2012-09-26\"",
   "keyword": "When "
 });
 formatter.match({
